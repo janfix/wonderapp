@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="4.2172389"
+   height="4.1013522"
+   viewBox="0 0 1.1158112 1.0851495"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="radioR.svg">
+  <title
+     id="title4547">radio</title>
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="44.8"
+     inkscape:cx="3.0780822"
+     inkscape:cy="1.2450743"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="2.2674666,1.0215769"
+       orientation="0,1"
+       id="guide4496"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1.4672201,-0.27771628"
+       orientation="0,1"
+       id="guide4498"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0.21222087,1.7066589"
+       orientation="1,0"
+       id="guide4500"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="0.91502043,1.6357883"
+       orientation="1,0"
+       id="guide4502"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>radio</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.7050121,-293.82736)">
+    <ellipse
+       style="opacity:1;vector-effect:none;fill:#f7f7f7;fill-opacity:1;stroke:#5bc0de;stroke-width:0.03532109;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5129-4"
+       cx="2.2491398"
+       cy="294.3764"
+       rx="0.30243447"
+       ry="0.30243444" />
+    <ellipse
+       style="opacity:1;vector-effect:none;fill:#5bc0de;fill-opacity:1;stroke:none;stroke-width:0.11890851;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path5727"
+       cx="2.2499282"
+       cy="294.37247"
+       rx="0.13403092"
+       ry="0.12614675" />
+    <rect
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#5bc0de;stroke-width:0.08266398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4494"
+       width="1.0331471"
+       height="0.95047075"
+       x="1.7463441"
+       y="293.89093"
+       ry="0" />
+    <rect
+       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.00591377;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4510"
+       width="0.71098948"
+       height="0.12970509"
+       x="1.913138"
+       y="293.82736" />
+    <rect
+       style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.00591377;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4510-6"
+       width="0.71098948"
+       height="0.12970509"
+       x="1.917233"
+       y="294.78281" />
+  </g>
+</svg>

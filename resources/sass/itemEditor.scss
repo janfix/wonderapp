@@ -1,0 +1,529 @@
+@import url("https: //cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css");
+@import "~quill/dist/quill.core.css";
+@import url("https://cdn.quilljs.com/1.3.6/quill.snow.css");
+@import "~bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+//@import "~spectrum-colorpicker/spectrum.css";
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    color: #4d4d4c;
+}
+
+.cardPreview {
+    height: 225px;
+}
+
+.topMenuBar {
+    width: 100%;
+    border: 1px lightgrey solid!important;
+    padding: 10px;
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+}
+
+.tbIcon {
+    width: 22px;
+    margin-left: -5px;
+}
+
+.btn-group {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.layoutIcon {
+    width: 27px;
+    margin-left: -5px;
+}
+
+.mLeft {
+    margin-left: 10px!important;
+}
+
+label.filebutton:hover {
+    background-color: #0dcaf0;
+    background-image: url("../../resources/assets/images/uploadimageWhite.png");
+}
+
+label.filebutton {
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #0dcaf0;
+    border-radius: 3px;
+    background-image: url("../../resources/assets/images/uploadimage.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    cursor: pointer;
+}
+
+label span input {
+    z-index: 999;
+    line-height: 0;
+    font-size: 50px;
+    position: absolute;
+    top: -2px;
+    left: -700px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "alpha(opacity=0)";
+    cursor: pointer;
+    _cursor: hand;
+    margin: 0;
+    padding: 0;
+}
+
+.WchoiceButton {
+    height: 33px;
+}
+
+.editorAction {
+    display: inline-block;
+}
+
+.editorAction img {
+    display: inline-block;
+}
+
+.dropdown-menu {
+    min-width: 0px!important
+}
+
+.freeShapeSelect {
+    max-width: 100px!important;
+}
+
+.freeShape {
+    width: 200px;
+}
+
+.complementColor {
+    display: none;
+}
+
+.ql-container {
+    resize: vertical;
+    overflow: auto;
+}
+
+.ql-editor {
+    min-height: 250px;
+}
+
+.ql-snow .ql-tooltip {
+    position: absolute;
+    left: 0px!important
+}
+
+.editContainer {
+    margin-top: 10px;
+}
+
+canvas {
+    border: 1px lightgrey solid!important;
+}
+
+.bottomMenuBar {
+    border: 1px lightgrey solid!important;
+    padding: 10px;
+    margin-top: 10px!important;
+    margin-bottom: 10px!important;
+}
+
+.parameterPanel {
+    margin-top: 5px;
+    border: 1px solid lightgrey;
+    font-size: 12px;
+    padding: 0px!important;
+    /* background-color: #dbebfc; */
+}
+
+.param {
+    font-size: small;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+    ;
+}
+
+.paramItem {
+    text-align: left;
+    border: 1px lightgrey solid;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.circleLegend {
+    margin-left: 60px;
+}
+
+.ParamPanel {
+    padding: 3px;
+    text-align: center!important;
+    color: white;
+    background-color: #343A40;
+}
+
+.slideCont {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.air {
+    margin-top: 10px;
+}
+
+.tickShape button {
+    border: 1px lightgrey solid;
+    font-size: 12px!important;
+}
+
+#myTabContent {
+    padding: 15px;
+}
+
+.gridSquare {
+    position: absolute;
+    margin-left: -20px;
+}
+
+#QuestionFontSize {
+    width: 50px;
+}
+
+.editorAction {
+    display: none;
+}
+
+.Wicon {
+    font-size: 14px;
+}
+
+.closeParam {
+    float: right;
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+.closeParam:hover {
+    cursor: pointer;
+}
+
+.CTXSeparator {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contextMenu {
+    display: none;
+    position: absolute;
+    width: 140px;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.Cmenu button {
+    width: 100%;
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    color: #706c6c;
+}
+
+
+/* .Cmenu_FC {
+    display: none;
+    position: absolute;
+    width: 140px;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    border-radius: 3px;
+    font-size: 12px;
+} */
+
+.Cmenu_FC button {
+    width: 100%;
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    color: #706c6c;
+}
+
+.Cmenu button:hover {
+    background-color: teal;
+    color: white;
+}
+
+.Cmenu_FC button:hover {
+    background-color: #a35353;
+    color: white;
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    left: 140px;
+    top: 0px;
+    width: 130px;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.FBMenu {
+    top: 118px!important;
+}
+
+.openSub {
+    position: absolute;
+    left: 130px
+}
+
+.monitorPreview {
+    border: lightgreen 1px solid;
+    width: 200px;
+}
+
+.green {
+    color: green
+}
+
+.red {
+    color: red
+}
+
+.monitorList {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.MonitorAction:hover {
+    cursor: pointer;
+}
+
+.monitor {
+    border: gainsboro 1px solid;
+    padding: 10px;
+    display: none;
+}
+
+.titleExport {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.exportSummary {
+    border: gainsboro 1px solid;
+    padding: 10px;
+    margin: -8px;
+}
+
+.navTab {
+    font-size: 12px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.tab-content {
+    text-align: left;
+}
+
+.tabContainer {
+    position: absolute;
+    margin-top: -100px;
+}
+
+#exTab1 .tab-content {
+    color: white;
+    background-color: #428bca;
+    padding: 5px 15px;
+}
+
+.adjustTab {
+    color: grey;
+    /* margin-left: 15px!important; */
+}
+
+.nav-link {
+    color: grey;
+}
+
+#myTabContent {
+    padding: 15px;
+}
+
+.mLeft {
+    margin-left: 10px!important;
+}
+
+label span input {
+    z-index: 999;
+    line-height: 0;
+    font-size: 50px;
+    position: absolute;
+    top: -2px;
+    left: -700px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "alpha(opacity=0)";
+    cursor: pointer;
+    _cursor: hand;
+    margin: 0;
+    padding: 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #CFE2FF;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+}
+
+.infoScore {
+    margin-top: 15px;
+    display: block;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.threshold {
+    margin-top: 10px;
+}
+
+.itemRow {
+    border: gainsboro 1px solid;
+    margin-bottom: 3px;
+    background-color: rgb(250, 250, 250);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.zoomOut {
+    display: none;
+}
+
+#previewKonva {
+    width: fit-content;
+}
+
+#chronoBox {
+    display: none;
+    float: right;
+    margin-right: 10px;
+    margin-top: -130px;
+    font-size: 12px;
+    text-align: center;
+    border: peru 1px solid;
+    padding: 5px;
+}
+
+.chronoBox {
+    float: right;
+    margin-right: 10px;
+    margin-top: -130px;
+    font-size: 12px;
+    text-align: center;
+    border: peru 1px solid;
+    padding: 5px;
+}
+
+.choiceLimiterMessage {
+    display: none
+}
+
+
+/* .messages {
+    height: 60px;
+    width: 100%
+} */
+
+.checkResult {
+    border: 1px grey solid;
+    background-color: black;
+    color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+
+.ModifyShape {
+    display: none;
+}
+
+#previewContainer {
+    display: none;
+}
+
+.CPButton {
+    border-radius: 5px;
+    height: 25px;
+    width: 40px;
+    cursor: pointer;
+    border: 1px gainsboro solid;
+}
+
+.CPButton i {
+    margin-right: 2px;
+    float: right;
+}
+
+.minipreview {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px gainsboro solid;
+}
+
+.navbar {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.parserMessage {
+    display: none;
+}
+
+.PackageMeta {
+    font-size: 12px;
+}
+
+.packageMetaButton {
+    cursor: pointer;
+}
+
+.packageMetaButton:hover {
+    font-weight: bold;
+}
