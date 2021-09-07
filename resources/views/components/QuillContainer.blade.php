@@ -5,9 +5,9 @@
 
 
 <div class="editContainer collapse">
+  <div class="ParamPanel" style="font-size:12px">Rich Editor<i class="bi bi-x-circle Wicon closeParam"></i></div>
   
   {{--  <div class="btn-group">
-    
   </div>
  --}}
    <div  id="toolbar" class="toolbar"></div>

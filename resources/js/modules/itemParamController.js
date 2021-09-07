@@ -111,7 +111,7 @@ export default function activateItemParam(stage, layer) {
     })
 
 
-    addHint(stage, layer);
+    /* addHint(stage, layer);
     $("#hintactivate").on("change", function() {
         if (stage.findOne("#hint").visible() == true) {
             stage.findOne("#hint").visible(false);
@@ -121,7 +121,7 @@ export default function activateItemParam(stage, layer) {
             layer.batchDraw();
         }
     })
-
+ */
 
     $(".resetBTActivate").on("click", function() {
         console.log($(this).prop("checked"))

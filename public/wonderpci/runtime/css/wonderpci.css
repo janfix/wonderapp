@@ -1,0 +1,14 @@
+/*add some style, need to scope (using the typeIdentifier as class prefix) every style declaration to prevent collision */
+
+@import url('base.css');
+.qti-customInteraction .wonderpci .prompt {
+    position: relative;
+}
+
+.signature {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-image: url('img/colorban.png');
+    background-repeat: no-repeat;
+}

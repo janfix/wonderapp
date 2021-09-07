@@ -1,4 +1,3 @@
-
 <x-layout>
     <x-parserModal></x-parserModal>
     <x-header>  

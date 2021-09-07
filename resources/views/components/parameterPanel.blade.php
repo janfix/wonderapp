@@ -455,8 +455,14 @@
                     <div class="row mt-3">
                         <h1 style="font-size: 1.2em; font-weight: bold;">Didactical description</h1>
                         <div class="col">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="metaSubject" placeholder="add here metadata" style="font-size: 0.9em;">
+                            <div class="form-floating">
+                                <!-- <input type="text" class="form-control" id="metaSubject" placeholder="add here metadata" style="font-size: 0.9em;"> -->
+                                 <select class="form-select " id="metaSubject" aria-label="Subject list available">
+                                    <option class="smallSelectMeta" value="empty" selected>Open this select menu</option>
+                                    <option class="smallSelectMeta">Mathematics</option>
+                                    <option class="smallSelectMeta">English</option>
+                                    <option class="smallSelectMeta">History</option>
+                                </select>
                                 <label for="metaSubject">Subject</label>
                             </div>
                         </div>
@@ -478,17 +484,21 @@
                                 <label for="metaSkill">Skill framework ref.</label>
                             </div>
                         </div>
+                        <div class="row">
                         <div class="col">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="metaTask" placeholder="add here metadata" style="font-size: 0.9em;">
                                 <label for="metaTask">Task definition</label>
                             </div>
                         </div>
+                        </div>
+                        <div class="row">
                         <div class="col">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="metakeywords" placeholder="add here metadata" style="font-size: 0.9em;">
                                 <label for="metakeywords">Keywords</label>
                             </div>
+                        </div>
                         </div>
                     </div>
                     <div class="row">

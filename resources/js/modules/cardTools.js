@@ -11,6 +11,7 @@ export var itemPackMap = [];
 
 /* ALL LISTENERS */
 export function zoomInBT() {
+    console.log("FROM ZoomINBT");
     $(".zoom").on("click", function() {
         $(this).parent().parent().find(".minipreview").css("width", "1000px");
         $(this).parent().parent().parent().parent().find(".dataLine").css("display", "none");
@@ -52,11 +53,12 @@ export function activeEditCardItem(allItems, CKType) {
         $(".edit").off("click")
         $(".edit").on("click", function() {
             $("#KonvaContainer").empty();
-            console.log(getItemPack())
+            $(".backToEditor").trigger("click");
+            //console.log(getItemPack())
                 // Pindex identify which item is concerned
-            console.log($(this).attr("data-id"))
+            //console.log($(this).attr("data-id"))
             var i2e = getPItem($(this).attr("data-id"))
-            console.log(i2e)
+            //console.log(i2e)
 
             var stage = Konva.Node.create(i2e.jsonGen[0], 'KonvaContainer');
 

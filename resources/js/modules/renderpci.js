@@ -32,8 +32,6 @@ export default function createRender(jsonStage, param) {
         nativeImage.src = imageNode.getAttr('source');
     })
 
-
-
     //No drag for all
     stage.find('.inputGroup').draggable(false);
     stage.find('.freeText').draggable(false);
@@ -58,13 +56,16 @@ export default function createRender(jsonStage, param) {
     stage.findOne("#grido").clearCache().draw();
     if (!param.gridVisible) { stage.find(".grid").visible(false); }
 
+   
+
     stage.find('.feedBack').visible(false);
     stage.find('.locker').destroy();
 
     // stage.find(".freeImage").visible(true);
 
     // draw the image        
-    stage.findOne("Layer").batchDraw(); //Grid Layer has no attrs!
+    console.log(stage)
+    stage.find("Layer").batchDraw(); //Grid Layer has no attrs!
     layer.batchDraw();
 
     stage.find("#hint").on("click", function() {
@@ -88,6 +89,7 @@ export default function createRender(jsonStage, param) {
         this.parent.batchDraw();
         $(".HintRevealed").html("hint revealed!") //Response encoding
     })
+
 
     // Elimination mode
 
@@ -257,7 +259,7 @@ export default function createRender(jsonStage, param) {
                 console.log(e)
                 var allTicks = stage.find(".tick");
                 var scopeActif = this.attrs.scope;
-                console.log(scopeActif)
+                //console.log(scopeActif)
                 var inputScoped = []
                 var allInputGroups = stage.find(".inputGroup");
                 if (scopeActif !== "none") {
@@ -299,15 +301,17 @@ export default function createRender(jsonStage, param) {
         var tickState = this.findOne(".tick");
         var boxState = this.findOne(".inputBox");
         var allFeedBacks = stage.find(".feedBack");
+        console.log(allFeedBacks)
         $(".clickCounter").html(clickCounter)
 
         for (let i = 0; i < allFeedBacks.length; i++) {
+            
             if (allFeedBacks[i].attrs.belongTo == this.id() && tickState.visible() && !param.itemElimination) {
                 // console.log("ELIM DESACTIVE")
                 allFeedBacks[i].visible(true);
                 allFeedBacks[i].opacity(1)
             } else {
-                //console.log("ELIM ACTIF")
+                console.log("ELIM ACTIF")
                 allFeedBacks[i].visible(false);
             }
 
@@ -318,7 +322,7 @@ export default function createRender(jsonStage, param) {
         function clickEffect(tickState, boxState) {
             tickState.scaleX(0);
             tickState.scaleY(0);
-            boxState.fill("#eacccc")
+           // boxState.fill("#eacccc")
             tickState.tween = new Konva.Tween({
                 node: tickState,
                 scaleX: 1,
@@ -331,7 +335,7 @@ export default function createRender(jsonStage, param) {
 
             boxState.tween = new Konva.Tween({
                 node: boxState,
-                fill: "#ffffff",
+               // fill: "#ffffff",
                 easing: Konva.Easings.EaseIn,
                 duration: 0.15,
             });
