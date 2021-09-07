@@ -434,7 +434,7 @@
                 <div class="tab-pane fade" id="metadata" role="tabpanel" aria-labelledby="metadata-tab">
 
 
-                    <div class="row">
+                   <!-- <div class="row">
                         <div class="col">
                             <div class="input-group input-group-sm mb-3">
                                 <span class="input-group-text" id="inputGroup-sizing-sm">Wonder-ID</span>
@@ -449,7 +449,7 @@
                         </div>
 
                     </div>
-                   <!--  <div class="row">
+                     <div class="row">
                         *To fill metadata faster : use the Wonder Metadata Generator, paste it in the Rich Editor and press the FMeta button.
                     </div> -->
                     <div class="row mt-3">
