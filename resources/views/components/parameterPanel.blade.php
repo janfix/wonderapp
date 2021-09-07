@@ -449,20 +449,20 @@
                         </div>
 
                     </div>
-                    <div class="row">
+                   <!--  <div class="row">
                         *To fill metadata faster : use the Wonder Metadata Generator, paste it in the Rich Editor and press the FMeta button.
-                    </div>
+                    </div> -->
                     <div class="row mt-3">
                         <h1 style="font-size: 1.2em; font-weight: bold;">Didactical description</h1>
                         <div class="col">
                             <div class="form-floating">
-                                <!-- <input type="text" class="form-control" id="metaSubject" placeholder="add here metadata" style="font-size: 0.9em;"> -->
-                                 <select class="form-select " id="metaSubject" aria-label="Subject list available">
+                                <input type="text" class="form-control" id="metaSubject" placeholder="add here metadata" style="font-size: 0.9em;">
+                                <!--  <select class="form-select " id="metaSubject" aria-label="Subject list available">
                                     <option class="smallSelectMeta" value="empty" selected>Open this select menu</option>
                                     <option class="smallSelectMeta">Mathematics</option>
                                     <option class="smallSelectMeta">English</option>
                                     <option class="smallSelectMeta">History</option>
-                                </select>
+                                </select> -->
                                 <label for="metaSubject">Subject</label>
                             </div>
                         </div>
