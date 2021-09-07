@@ -1,6 +1,5 @@
 /* This represents the Pack as a logic mirror image of the dom
  and facilitate the itemPack management */
-import $ from "jquery";
 import { itemPackMap } from "./cardTools";
 
 

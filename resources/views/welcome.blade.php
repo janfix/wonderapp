@@ -86,9 +86,9 @@
 
                 <div class="links">
                     <a href="#">Create a new test</a>
-                    <a href="#">Test repository</a>
+                    <a href="#">Live poll</a>
                     <a href="itemEditors">Create a new item</a>
-                    <a href="#">Item Collection</a>
+                    <a href="#">Test and Item repository</a>
                     <a href="#">Session management</a>
                     {{-- <a href="#">Server options</a> 
                     <a href="#">Parameters</a>--}}

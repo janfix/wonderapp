@@ -9,7 +9,7 @@ export default function multiSelection(stage, layer) {
     // MultiSelection explo -----------------------------------------------------------------------------
     var tr = new Konva.Transformer();
     tr.name("Mselect");
-    console.log(tr)
+    //console.log(tr)
     layer.add(tr);
     // add a new feature, lets add ability to draw selection rectangle
     var selectionRectangle = new Konva.Rect({

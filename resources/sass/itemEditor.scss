@@ -181,7 +181,7 @@ canvas {
     padding: 3px;
     text-align: center!important;
     color: white;
-    background-color: #343A40;
+    background-color: steelblue;
 }
 
 .slideCont {
@@ -526,4 +526,21 @@ td {
 
 .packageMetaButton:hover {
     font-weight: bold;
+}
+
+.smallSelectMeta {
+    font-size: 0.8rem;
+}
+
+#metaSubject{
+    font-size:  0.8rem!important;
+}
+
+.metabutton{
+    margin-top:-5px;
+    margin-right: 20px;
+}
+
+.metatxtformentry{
+    font-weight: bold!important;
 }

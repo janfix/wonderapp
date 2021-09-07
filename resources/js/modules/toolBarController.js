@@ -46,7 +46,7 @@ import buildParam from "./param";
 export default function toolBarController(stage, layer, lockLayer, gridLayer) {
     /* 1. - Clear  */
     $(".clearAll").on("click", function() {
-        console.log("MAIN -Reaction of clear all")
+        //console.log("MAIN -Reaction of clear all")
         stage.find(".inputGroup").destroy();
         stage.find(".question").destroy();
         stage.find(".freeShape").destroy();

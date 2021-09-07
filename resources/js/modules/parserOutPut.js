@@ -5,7 +5,9 @@ import buildParam from "./param";
 import reactivate from "./reactivate";
 import itemReport_tpl from "./itemReport_TPL";
 import applyParam from "./applyParam";
-import updateSingle from "./updateSingle";
+import { zoomInBT, zoomOutBT, activeCardPreview, activeEditCardItem, deleteSingle } from "./cardTools";
+import { addToItemPack } from "./itemPack";
+//import updateSingle from "./updateSingle";
 import { toDay } from "./tools";
 
 export default function parserOutPut(stage, layer, allAlong) {
@@ -82,8 +84,15 @@ export default function parserOutPut(stage, layer, allAlong) {
                 //console.log(allItems[i].choices[y]) //Here options by choices are visible
                 if (CKType == "checkbox") {
                     $(".addCkGroup").trigger("click");
+                    for (let y = 0; y < allItems[i].choices.length; y++) {
+                        allItems[i].choices[y].type = "checkbox";;
+                        
+                    }
                 } else {
                     $(".addRadioGroup").trigger("click");
+                     for (let y = 0; y < allItems[i].choices.length; y++) {
+                        allItems[i].choices[y].type = "radio";;  
+                    } 
                 }
                 //console.log(stage.find("#Choice" + (y + 1)))
                 var choiceLoaded = stage.findOne("#Choice" + (y + 1)).text(allItems[i].choices[y].text);
@@ -120,9 +129,8 @@ export default function parserOutPut(stage, layer, allAlong) {
                 }
 
 
-                // FEEBACK SOLVER
+                // FEEDBACK SOLVER
                 if (typeof allItems[i].choices[y].feedback !== "undefined" && allItems[i].choices[y].feedback !== false) {
-                    //console.log("FeedBack OK")
                     var feedbackText = addFreeText(stage, layer)
                     feedbackText.text(allItems[i].choices[y].feedback);
                     feedbackText.name("feedBack");
@@ -237,82 +245,22 @@ export default function parserOutPut(stage, layer, allAlong) {
 
             $(".monitorList").append(reportItem_tpl);
             $(".monitorList").find("#T" + update.itemID).append(allChoicesBlock(allItems[i].choices))
-        }
+       
 
         /* ALL LISTENERS */
-        function zoomInBT() {
-            $(".zoom").on("click", function() {
-                $(this).parent().parent().find(".minipreview").css("width", "1000px");
-                $(this).parent().parent().parent().parent().find(".dataLine").css("display", "none");
-                $(this).hide();
-                $(this).parent().find(".zoomOut").show();
-            });
-        }
 
-        function zoomOutBT() {
-            $(".zoomOut").on("click", function() {
-                $(this).parent().parent().find(".minipreview").css("width", "100%");
-                $(this).parent().parent().parent().parent().find(".dataLine").css("display", "block");
-                $(this).hide();
-                $(this).parent().find(".zoom").show();
-            })
-        }
+         var nextItem = $(".itemRow");
 
-        $(".activePreview").on("click", function() {
-            var Pindex = parseInt($(this).parent().parent().find(".minipreview").attr("data-index")) - 1;
-            /*  console.log(allItems[Pindex]);
-             console.log(Pindex); */
-            var param = buildParam();
-            renderpci.create(jsonStageGenerated[Pindex], param);
-            $(".editContainer").hide();
-            $("#parameterPanel").addClass("collapse");
-            $(".GraphicEditor ").hide();
-            $('.previewContainer').toggle();
-        })
+         //CARDTOOLS Listeners
+            zoomInBT();
+            zoomOutBT();
+            activeCardPreview(jsonStageGenerated);
+            activeEditCardItem([allItems[i]], CKType);
+            addToItemPack(allItems[i].itemID, nextItem.length + 1, allItems[i], jsonStageGenerated, allItems[i].param, dataURL);
+            $(".deletor").on("click", function() {
+                deleteSingle($(this).attr("data-ID"))
 
-        var currentItem = 0;
-        $(".clearAll").trigger("click");
-        editItemBT();
-
-
-        function editItemBT() {
-            $(".edit").off("click")
-            $(".edit").on("click", function() {
-                $("#KonvaContainer").empty();
-                // Pindex identify which item is concerned
-                var Pindex = parseInt($(this).parent().parent().find(".minipreview").attr("data-index")) - 1;
-                stage = Konva.Node.create(jsonStageGenerated[Pindex], 'KonvaContainer');
-                currentItem = Pindex;
-
-                /* Callling here Reactivate : The new stage will have all functionalities back and the content will be the item content Recreated using the Wchoice utilites */
-                reactivate(stage, allItems[Pindex]);
-
-                applyParam(stage, allItems[Pindex]);
-
-                $("html, body").animate({
-                    scrollTop: 0
-                }, 100);
-
-                $(".editContainer").addClass("collapse");
-                $("#parameterPanel").addClass("collapse");
-                $(".GraphicEditor ").show();
-                $('.previewContainer').addClass("collapse");
-
-                //Edition mode :How  to Update... 1.Updata AllItems ARRAY : Content & aspect + 2.Update Interface 
-                $(".updateSingle").prop("disabled", false)
-                    //console.log($(this).attr("data-itID"))
-                $(".updateSingle").off("click")
-                $(".updateSingle").on("click", function() {
-                    updateSingle(stage, allItems, currentItem, jsonStageGenerated, CKType)
-                    allItems[currentItem].param = buildParam();
-                    editItemBT();
-                    zoomInBT()
-                    zoomOutBT()
-                        //activPReviewBT(jsonStageGenerated[Pindex], param)
-
-                });
-
-            });
-        }
+            }) 
+        }    
     }
 }

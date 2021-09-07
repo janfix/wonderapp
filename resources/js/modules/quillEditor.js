@@ -42,14 +42,10 @@ var editor = new Quill('.editor', quillOptions); // First matching element will 
 
 
 
-
-
-
-
-
 //$(".ql-toolbar").append('<span class="ql-formats"><button data-bs-toggle="modal" data-bs-target="#SharpModal" id="sharpCode" title="Remind #code rules">#Code</button></span>')
-$(".ql-toolbar").append('<span class="ql-formats"><select class="parserSelect" title="Choose a parser"><option>#code</option><option>QTI</option><option>DOCX</option></select></span>')
-
+/* $(".ql-toolbar").append('<span class="ql-formats"><select class="parserSelect" title="Choose a parser"><option>#code</option><option>QTI</option><option>DOCX</option></select></span>') */
+/* $(".ql-toolbar").append('<span class="ql-formats"><button class="metabutton" id="newMeta" title="Create a metadata template"><img width="50px" src="images/plusmeta.png"></button></span>');
+$(".ql-toolbar").append('<span class="ql-formats"><button class="metabutton" id="inputMeta" title="Add in one click metadata to your item"><img width="50px" src="images/sendmeta.png"></button></span>') */
 
 // This code define how to write an handler for a Quill button toolbar !
 /* var toolbar = editor.getModule('toolbar');

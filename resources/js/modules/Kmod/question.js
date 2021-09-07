@@ -5,7 +5,7 @@ import editKcontent from "./editKContent";
 export default function addQuestionLabel(Stage, Layer) {
     var labelQ = new Konva.Text({
         x: 35,
-        y: 20,
+        y: 30,
         text: 'Q1. Write here your Instruction... Double-click to edit !',
         fontFamily: $("#fontQuestion").val(),
         fontSize: parseInt($("#QuestionFontSize").val()),

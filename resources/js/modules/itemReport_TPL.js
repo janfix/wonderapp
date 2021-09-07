@@ -78,11 +78,11 @@ export default function Itemreport_tpl(update) {
         '        <li> Item ID: ' + update.itemID +
         '        <li> Creation date: ' + update.CDate +
         '        <li> Author(s): ' + update.authors +
-        '        <li> Interaction type :' + update.interaction +
-        '        <li> Choices :' + update.inputType +
+        '        <li> Interaction type :' + update.interactionType +
+        '        <li> Interaction details :' + update.inputType +
         '        <li> Domain :' + update.domain +
         '        <li> Subject :' + update.subject +
-        '        <li> version :' + update.version +
+       /*  '        <li> version :' + update.version + */
         '        <li> Subdomain :' + update.subdomain +
         '</ul>' +
         ' </div>' +

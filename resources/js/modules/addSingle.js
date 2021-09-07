@@ -2,11 +2,11 @@ import $ from "jquery";
 import buildParam from "./param";
 import itemReport_tpl from "./itemReport_TPL";
 import { toDay } from "./tools";
-import { zoomInBT, zoomOutBT, activeCardPreview, activeEditCardItem, deleteSingle } from "./cardTools"
+import { zoomInBT, zoomOutBT, activeCardPreview, activeEditCardItem, deleteSingle } from "./cardTools";
 import { addToItemPack } from "./itemPack";
 //import { Layer } from "konva/types/Layer";
 
-export default function addSingleActivate(stage, oldItemID) {
+export default function addSingleActivate(stage) {
     var layer = stage.children[2];
     $(".monitor").show();
     var param = buildParam();
@@ -57,8 +57,6 @@ export default function addSingleActivate(stage, oldItemID) {
             "scope": allChoices[i].parent.attrs.scope,
 
         });
-
-        //console.log(ZeItem)
     }
 
     // Explore optionnal content
@@ -148,7 +146,7 @@ export default function addSingleActivate(stage, oldItemID) {
         "question": ZeItem.question,
         "choices": ZeItem.choices,
         "authors": "JPR",
-        "interactionType": "Choices",
+        "interactionType": $("#metaInteraction").val(),
         "eliminationMode": $("#elimination").prop("checked"),
         "hint": hintValue,
         "ATLimiter": $("#limiter").val(),
@@ -161,9 +159,43 @@ export default function addSingleActivate(stage, oldItemID) {
         "inputType": CKType,
         "version": "", //TODO
         "subject": $("#metaSubject").val(),
+        "domain" : $("#metaDomain").val(),
+        "subdomain" : $("#metaSubdomain").val(), 
+        "skillfrm" : $("#metaSkill").val(), 
+        "taskdef" : $("#metaTask").val(), 
+        "keywords" : $("#metakeywords").val(), 
+        "age" : $("#metaAge").val(), 
+        "isced" : $("#metaISCED").val(), 
+        "comptool" : $("#metaCtool").val(), 
+        "responseformat" : $("#metaResponse").val(), 
+        "corrtype" : $("#metaCorrType").val(), 
+        "corrguide" : $("#metaCorrGuide").val(), 
+        "textversion" : $("#metaTextLink").val(), 
+        "grade":$("#metaGrade").val(),
+        "comments" :  $("#floatingTextarea").val(),
 
     }
+    
+    ZeItem.param.metadata = {
+        "subject": $("#metaSubject").val(),
+        "domain" : $("#metaDomain").val(),
+        "subdomain" : $("#metaSubdomain").val(), 
+        "skillfrm" : $("#metaSkill").val(), 
+        "taskdef" : $("#metaTask").val(), 
+        "keywords" : $("#metakeywords").val(), 
+        "age" : $("#metaAge").val(), 
+        "isced" : $("#metaISCED").val(), 
+        "comptool" : $("#metaCtool").val(), 
+        "responseformat" : $("#metaResponse").val(), 
+        "corrtype" : $("#metaCorrType").val(), 
+        "corrguide" : $("#metaCorrGuide").val(), 
+        "textversion" : $("#metaTextLink").val(), 
+        "grade":$("#metaGrade").val(),
+        "comments" :  $("#floatingTextarea").val(),
+    }
 
+    $("#metadata").find("input").val("");
+    $("#floatingTextarea").val("");
 
     function chronoDisplay() {
         var chronoline
