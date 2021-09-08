@@ -11,9 +11,9 @@
                         package builder</button><button type="button" disabled="disabled"
                         class="btn btn-sm btn-outline-secondary updateSingle mLeft">Update Item in package
                         builder</button>
-                    <div class="btn-group" role="group" aria-label="Basic example" style="float:left"><button
+<!--                     <div class="btn-group" role="group" aria-label="Basic example" style="float:left"><button
                             type="button" class="btn btn-sm btn-outline-success">Import template</button><button
-                            type="button" class="btn btn-sm btn-outline-success">Export template</button></div>
+                            type="button" class="btn btn-sm btn-outline-success">Export template</button></div> -->
                     <div class="btn-group" role="group" aria-label="whatt" style="float:right"><button type="button"
                             class="btn btn-sm btn-outline-info action">Preview</button></div>
                 </div>
