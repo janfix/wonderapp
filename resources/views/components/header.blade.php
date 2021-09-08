@@ -27,7 +27,7 @@
             <div class="container">
                 <a href="#" class="navbar-brand d-flex align-items-center">
                     <img src="images/flame.svg" width="20px">
-                    <strong style="margin-left:5px">WonderChoice 1.1.1</strong>
+                    <strong style="margin-left:5px">WonderChoice Alpha version</strong>
                 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
