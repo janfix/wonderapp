@@ -8,6 +8,7 @@
                             The wonderChoice is a prototype for an item generator based on choice interaction. It offers many possibilities : Import choice items in text format, use a graphic environment to organize the item presentation. Customize checkboxes, radio button, ticks
                             and labels. It is also possible to enrich the interaction behaviour with options and visual effects. This generator can be included in all platform under PCI format (portable custom interaction), or simple HTML/JS version.
                         </p>
+                        <a href="terms.html">Terms of service</a>
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4">
                         <h4 class="text-white">Author</h4>
