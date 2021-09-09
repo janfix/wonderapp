@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col-1">
                     <div class="d-grid gap-2 d-md-block"><button type="button"
-                            class="btn btn-sm btn-outline-info callHelp"><img src="images/question-mark.svg"
-                                width="20px" title="Help"></button></div>
+                            class="btn btn-sm btn-outline-info callHelp">
+                           <a href="WonderChoiceAlphaDoc.pdf"><img src="images/question-mark.svg" width="20px" title="Help"></a></button></div>
                 </div>
                 <div class="col-11"><button type="button" class="btn btn-sm btn-outline-info addSingle mLeft">Add to
                         package builder</button><button type="button" disabled="disabled"
