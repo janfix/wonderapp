@@ -10,7 +10,7 @@ export default function Itemreport_tpl(update) {
         '<button type="button" class="btn zoomOut  btn-outline-info">Zoom out</button>' +
         '<button type="button" class="btn activePreview  btn-outline-info">Preview</button>' +
         '<button type="button" data-ID="' + update.itemID + '" class="btn edit  btn-outline-info">Edit</button>' +
-        '<button type="button" class="btn toQTI  btn-outline-info">To QTI</button>' +
+       /*  '<button type="button" class="btn toQTI  btn-outline-info">To QTI</button>' + */
         '<button type="button" data-ID="' + update.itemID + '" class="btn deletor  btn-outline-info">Delete</button>' +
         '</div>' +
         '</div>' +

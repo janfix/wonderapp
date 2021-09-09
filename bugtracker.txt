@@ -1,0 +1,6 @@
+Reload item form package : 
+- image background  layer problem
+- hidden text is not kept hidden. if it has been encoded element by element (via the context menu!)
+
+
+Context menu on a free element that is integrated in a group...If hint ; All elements of the group create hint symbol !

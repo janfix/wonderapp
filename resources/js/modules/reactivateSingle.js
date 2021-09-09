@@ -363,6 +363,7 @@ export default function reactivate(stage, item) {
     console.log(item)
 
     /* Rebuilding Metadata */
+    if(typeof item.param.metadata !== "undefined"){
         $("#metaSubject").val(item.param.metadata.subject);
         $("#metaDomain").val(item.param.metadata.domain);
         $("#metaSubdomain").val(item.param.metadata.subdomain);
@@ -379,6 +380,7 @@ export default function reactivate(stage, item) {
         $("#metaGrade").val(item.param.metadata.grade);
         $("#metaInteraction").val("choices");
         $("#floatingTextarea").val(item.param.metadata.comments);
+    }
   
 
     /* The Question */
