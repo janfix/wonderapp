@@ -193,7 +193,9 @@ export default function addCloneinputGroup(Stage, inputType, GroupChoice, layer,
 
         //Listening only in Edition Mode
         Ctext.on("dblclick", function() {
-            //console.log("Edition simple text")
+            console.log("Edition choices");
+            $(".editContainer").addClass("collapse");
+            $(".editorAction").hide()
             this.hide();
             Layer.draw();
             var textPosition = this.absolutePosition();

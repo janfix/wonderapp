@@ -29,12 +29,13 @@ Route::get('wonderChoice', function () {
 
 
 Route::GET('ajax-request', 'App\Http\Controllers\AjaxController@packFoldereBuilder');
-
 Route::post('ajax-request', 'App\Http\Controllers\AjaxController@manifestBuilder');
-
 Route::post('ajax-request-content', 'App\Http\Controllers\AjaxController@contentBuilder');
 
+
 Route::post('download-zip', 'App\Http\Controllers\ZipController@zipBuilder');
+
+
 
 
 

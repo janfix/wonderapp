@@ -1,5 +1,9 @@
+import $ from "jquery";
+
 export default function editKcontent(Stage, Layer, that) {
     console.log("Edition simple text")
+    $(".editContainer").addClass("collapse");
+    $(".editorAction").hide()
     that.hide();
     Layer.draw();
     var textPosition = that.absolutePosition();

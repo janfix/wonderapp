@@ -41,6 +41,26 @@ export default function app() {
     });
 
 
+    //TestBuilder
+    $(".toTestBuilder").on("click", function() {
+        console.log("HIT CREATE A TEST");
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $.ajax({
+            url: 'testbuilder',
+            type:"post",
+            data:"HELLO",
+            success: function() {
+                console.log("TEST Folder created");
+            }, error : function(data){
+                console.log("ERROR", data.length)
+            }
+        });
+    })
+    
     // QTI Generator
     $(".qtiGenerator").on("click", function() {
        
