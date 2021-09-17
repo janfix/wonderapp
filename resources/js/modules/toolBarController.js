@@ -210,7 +210,9 @@ export default function toolBarController(stage, layer, lockLayer, gridLayer) {
         var url = URL.createObjectURL(e.target.files[0]);
         var img = new Image();
         img.src = url;
+        var that = this;
         img.onload = function() {
+            console.log("ONLOAD STEP")
 
             var img_width = img.width;
             var img_height = img.height;
@@ -238,7 +240,10 @@ export default function toolBarController(stage, layer, lockLayer, gridLayer) {
             layer.draw();
             var url = theImg.toDataURL();
             theImg.setAttr('source', url);
+            $(that).val("");
         }
+       
+       
     });
 
     /* 13. Add freeText */
