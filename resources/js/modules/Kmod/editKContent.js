@@ -3,6 +3,7 @@ import $ from "jquery";
 export default function editKcontent(Stage, Layer, that) {
     console.log("Edition simple text")
     $(".editContainer").addClass("collapse");
+    $("#parameterPanel").addClass("collapse")
     $(".editorAction").hide()
     that.hide();
     Layer.draw();

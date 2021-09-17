@@ -195,6 +195,7 @@ export default function addCloneinputGroup(Stage, inputType, GroupChoice, layer,
         Ctext.on("dblclick", function() {
             console.log("Edition choices");
             $(".editContainer").addClass("collapse");
+            $("#parameterPanel").addClass("collapse")
             $(".editorAction").hide()
             this.hide();
             Layer.draw();
