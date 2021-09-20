@@ -27,7 +27,7 @@
     
 
     </div>
-    <div class="lastLineBT"><button type="button" class="btn btn-primary toTestBuilder">Build a test</button> <button type="button" class="btn btn-primary toItemLibrary">Send to Item Collection</button> <button type="button" class="btn btn-success qtiGenerator">Export to QTI Package</button></div>
+    <div class="lastLineBT"><button type="button" class="btn btn-primary toTestBuilder">Build a test</button> <button type="button" class="btn btn-primary toItemLibrary">Send to Item Library</button> <button type="button" class="btn btn-success qtiGenerator">Export to QTI Package</button></div>
     <div class="downloadBT"></div>
 
 
