@@ -18,6 +18,8 @@ export default function parserOutPut(stage, layer, allAlong) {
     var today = toDay();
     var allItems = [];
 
+
+
     $(".monitor").show();
     var wsource = $(".ql-editor").html();
 
@@ -208,8 +210,25 @@ export default function parserOutPut(stage, layer, allAlong) {
                 "TimeLimitMessage": $("#timeLimitMessage").val(),
                 "Shuffle": $("#ShuffleChoice").prop("checked"),
                 "resetBT": $("#resetBTActivate").prop("checked"),
-                "inputType": CKType
+                "inputType": CKType,
+                "subject": $("#metaSubject").val(),
+                "domain" : $("#metaDomain").val(),
+                "subdomain" : $("#metaSubdomain").val(), 
+                "skillfrm" : $("#metaSkill").val(), 
+                "taskdef" : $("#metaTask").val(), 
+                "keywords" : $("#metakeywords").val(), 
+                "age" : $("#metaAge").val(), 
+                "isced" : $("#metaISCED").val(), 
+                "comptool" : $("#metaCtool").val(), 
+                "responseformat" : $("#metaResponse").val(), 
+                "corrtype" : $("#metaCorrType").val(), 
+                "corrguide" : $("#metaCorrGuide").val(), 
+                "textversion" : $("#metaTextLink").val(), 
+                "grade":$("#metaGrade").val(),
+                "comments" :  $("#floatingTextarea").val(),
             }
+
+           
 
             function chronoDisplay() {
                 var chronoline
